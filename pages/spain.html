@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="sub-header-spain">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>SPAIN</h1>
+
+    </section>
+
+    <section class="place">
+
+        <div class="pplace">
+            <div class="place-col">
+
+                <div>
+                    <span>
+                        <h1>Spain Tour Package</h1>
+                        <p>7 Days/6 Nights <br>
+                            MADRID - Hotel Madrid Gran Via 25 (3 nights) <br>
+BARCELONA - Hotel Del Mar (3 nights)
+ <br>
+ Tour Guide <br>
+ USD 1,099 per person
+                            <br>
+                            Inclusions:
+                            Accommodations,
+                            Daily Breakfast, Round Trip Airport Transfers <br><br>
+                            Tour: Madrid City Tour; Royal Palace, Plaza de Oriente, Prado Museum, Gran Via, Paseo de la Castellana, Salamanca Quarter, Plaza de Castilla, Parque del Oeste, University Quarter, Las Ventas Bullring. Barcelona City Tour; Gothic Quarter, Olympic Port, Montjuic Mountain, Gaudi’s Casa Mila, Casa Batllo, Park Guell, Sagrada Familia, Gothic Cathedral of Santa Maria del Mar, Picasso Museum
+                            </p>
+                    </span>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="ttext-box">
+        <a href="booknow.html" class="m-btnn">Book Now</a>
+    </div>
+
+    
+</section>
+
+
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

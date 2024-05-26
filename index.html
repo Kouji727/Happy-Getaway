@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="pages/about.html">ABOUT</a></li>
+                    <li><a href="pages/offers.html">OFFERS</a></li>
+                    <li><a href="pages/reviews.html">REVIEWS</a></li>
+                    <li><a href="pages/contact.html">CONTACT</a></li>
+                    <li><a href="pages/booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>HAPPY GETAWAY TRAVEL AND TOURS</h1>
+            <p>CREATE YOUR HAPPY MEMORY WITH US, WITH HAPPY GETAWAY TRAVEL AND TOURS</p>
+            <a href="#homepage" class="km-btn">Know More</a>
+        </div>
+
+    </section>
+
+    <section id="homepage" class="homepage">
+
+        <h1>Explore our Website</h1>
+
+        <div class="row">
+            <div class="offers-col">
+                <img src="assets/images/offers.jpg">
+                <a href="pages/offers.html" class="layer">
+                    <h2>OFFERS</h2>
+                </a>
+            </div>
+
+            <div class="offers-col">
+                <img src="assets/images/about.jpg">
+                <a href="pages/about.html" class="layer">
+                    <h2>ABOUT</h2>
+                </a>
+            </div>
+
+            <div class="offers-col">
+                <img src="assets/images/review.jpg">
+                <a href="pages/reviews.html" class="layer">
+                    <h2>REVIEWS</h2>
+                </a>
+            </div>
+
+            <div class="offers-col">
+                <img src="assets/images/contact.jpg">
+                <a href="pages/contact.html" class="layer">
+                    <h2>CONTACT</h2>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

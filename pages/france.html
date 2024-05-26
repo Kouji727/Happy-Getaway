@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="sub-header-france">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>FRANCE</h1>
+
+    </section>
+
+    <section class="place">
+
+        <div class="pplace">
+            <div class="place-col">
+
+                <div>
+                    <span>
+                        <h1>France Tour Package</h1>
+                        <p>8 Days/7 Nights <br>
+                            Paris: Novotel Est Bagnolet <br>
+Amboise: Novotel Amboise <br>
+Lourdes: Le Mediterranee <br>
+Marseilles: Golden Tulip Marseille Euromed <br>
+Lyon: Best Western Lyon <br>
+Tour Guide <br>
+USD 1,465 per person 
+                            <br>
+                            Inclusions:
+                            Accommodations,
+                            Daily Breakfast and 1 Dinner, Round Trip Airport Transfers <br><br>
+                            Tour: Paris, Amboise, Lourdes, Marseilles, Lyon, and Dijon <br> <br>
+                            Boat: Boat Trip along River Seine in Paris <br>
+                            Ticket Admission: 2nd Floor Eiffel Tower in Paris, Carrieres de Lumiere show , La Rochepot Medieval Castle , Fontenay Abbey
+                            </p>
+                    </span>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="ttext-box">
+        <a href="booknow.html" class="m-btnn">Book Now</a>
+    </div>
+
+</section>
+
+
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

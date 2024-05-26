@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="sub-header-newyork">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>NEW YORK</h1>
+
+    </section>
+
+    <section class="place">
+
+        <div class="pplace">
+            <div class="place-col">
+
+                <div>
+                    <span>
+                        <h1>New York Tour Package</h1>
+                        <p>5 Days/4 Nights <br>
+                            The Paul Hotel NYC <br>
+                            Tour Guide <br>
+                            USD 719 per person
+                            <br>
+                            Inclusions:
+                            Accommodations,
+                            Daily Breakfast, Round Trip Airport Transfers <br><br>
+                            Tour: Central Park, 5th Avenue, Walking Graffiti Tour, New York City, ChinaTown, Empire State Building and Times Square
+                            </p>
+                    </span>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="ttext-box">
+        <a href="booknow.html" class="m-btnn">Book Now</a>
+    </div>
+
+    
+</section>
+
+
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

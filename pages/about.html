@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="sub-header-about">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>ABOUT US</h1>
+
+    </section>
+
+    <!------Jecho - ABOUT PAGE------>
+
+    <section class="about-us">
+
+        <div class="row">
+        <div class="about-col">
+            <h1>Here at Happy Getaway Travel and Tours</h1>
+            <p>We aim to introduce and to be recognized regionally, nationally, and internationally for its safe and healthy environment. We also guarantee engaging tours and activities which are memorable and worthwhile. Promoting the word “self love” is also part of our service.<br><br>Happy Getaway Travel and Tours’ mission is to engage tourists
+                and foreigners to have their vacation memories with us.
+                Make them realize that life is short, so make time to yourselves 
+                and have fun. We will make sure to provide all their expectations
+                as we can and make their staycation unforgettable with
+                guaranteed excellent services. Our company would also love to
+                give entertainment to comfort and relax you, your family, and friends.
+                We prepare some activity for you here that will surely make you
+                interested. Your time and effort will be valued here. </p>
+            
+        </div>
+
+
+        <div class="about-col">
+            <img src="../assets/images/aboutPic.jpg">
+        </div>
+    </div> 
+
+    </section>
+
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

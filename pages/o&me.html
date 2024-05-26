@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="sub-header-ocme">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>OCEANIA AND MIDDLE EAST</h1>
+
+    </section>
+
+    <!------JECHO - O&ME PAGE------>
+
+    <section class="tworow">
+        <br>
+
+        <div class="two-row">
+            <div class="offers-col">
+                <img src="../assets/images/australia.jpg">
+                <a href="australia.html" class="layerrr">
+                    <h2>AUSTRALIA</h2>
+                </a>
+            </div>
+
+            <div class="offers-col">
+                <img src="../assets/images/dubai.jpg">
+                <a href="dubai.html" class="layerrr">
+                    <h2>DUBAI</h2>
+                </a>
+            </div>
+            
+            </div>
+
+    </section>
+
+    <div class="ttext-box">
+        <a href="booknow.html" class="m-btnn">Book Now</a>
+    </div>
+
+    
+</section>
+
+
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<!------Jecho - HOMEPAGE------>
+
+<body>
+    <section class="sub-header-cebu">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>CEBU</h1>
+
+    </section>
+
+    <section class="place">
+
+        <div class="pplace">
+            <div class="place-col">
+
+                <div>
+                    <span>
+                        <h1>Cebu Tour Package</h1>
+                        <p>3 Days/2 Nights <br>
+                            Bayfront Hotel <br>
+                            Tour Guide <br>
+                            Php 2,951 per person
+                            <br>
+                            Inclusion:
+                            Accommodation,
+                            Daily Breakfast, 1 Lunch During The Tour, Roundtrip Airport Transfer <br> <br>
+                            Tour: Mactan Shrine, Lapu - Lapu Monument, Alegre Guitar Factory, Taoist Temple, Magellan’s Cross, Basilica Minore Del Sto. Nino, The Heritage of Cebu Monument, Yap San Diego House, Running tour: Colon Street, Fuente Osmena Circle & Capitol Site, and Lunch During The Tour
+                            </p>
+                    </span>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="ttext-box">
+        <a href="booknow.html" class="m-btnn">Book Now</a>
+    </div>
+
+    
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
+

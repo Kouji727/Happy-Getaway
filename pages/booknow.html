@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Happy Getaway</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header-booknow">
+        <nav>
+            <a href="../index.html"><img src="../assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="booknow.html">BOOK NOW</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+
+        <h1>BOOK NOW</h1>
+
+    </section>
+
+    
+
+    <!------ FORM ------>
+
+    <div class="formcontainerbody">
+
+        
+
+        <div class="formcontainer">
+            <div class="form-img">
+            </div>
+
+            <form id="formss">
+
+                <div class="personal-info">
+                    <label class="text1">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter Name" class="l1" id="1">
+                </div>
+
+                <div class="personal-info">
+                    <label class="text2">Contact Number</label>
+                    <input type="number" id="contno" placeholder="Enter Contact No." class="l2">
+                </div>
+
+                <div class="personal-info">
+                    <label class="text5">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" class="l5">
+                </div>
+
+                <div class="personal-info">
+                    <label class="text6">Passengers</label>
+                    <input type="number" min="0" id="passengers" readonly value="0" class="l6">
+					<input type="button" onclick="increment()" id="inc" value="+">
+					<input type="button" onclick="decrement()" id="dec" value="-">
+                </div>
+
+                <div class="personal-info">
+                    <label class="text3">Travel Type</label>
+                    <select id="tratyp" name="traveltype" required onchange="populate('tratyp','loc')" class="l3">
+                            <option value="">- Select Travel Type -</option>
+                            <option value="DomLoc" id="PH">Domestic/Local</option> 
+                            <option value="USA" id="USA">USA</option>
+                            <option value="Asia" id="ASIA">Asia</option>
+                            <option value="Europe" id="EU">Europe</option>
+                            <option value="OME" id="OME">Oceana and Middle East</option>
+                    </select>
+                </div>
+
+                <div class="personal-info">
+                    <label class="text7">Destination</label>
+					<select id="loc" name="location" disabled="true" class="l7">
+                        <option value="null">Not available</option>
+                    </select>
+                </div>
+
+                <div class="personal-info">
+                    <label class="text4">Depart</label>
+                    <input type="date" id="date" placeholder="Enter Depart" class="l4">
+                </div>
+
+                <div class="personal-info">
+                    <label class="text8">Return</label>
+                    <input type="date" id="date2" placeholder="Enter Return" class="l8">
+                </div>
+
+                <div class="personal-info">
+                    <button type='button' class="btnsub" id="submit">Submit</button> 
+                </div>
+
+            </form>
+            
+            <div id="popup" class="popup">
+
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                        <img src="../assets/images/check.png">
+                            <h2>Thank you !</h2>
+                                <p>Please check your email for the booking confirmation.</p>
+                </div>
+        
+            </div> 
+
+        </div>
+    </div>
+
+
+    <!------Footer------>
+
+    <section class="footer">
+        <img src="../assets/images/logo.png">
+        <p>Happy Getaway Travel and Tours</p>
+    </section>
+
+
+    <!------Java Script------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+		
+		function increment() {
+			document.getElementById('passengers').stepUp();
+		}
+		
+		function decrement() {
+			document.getElementById('passengers').stepDown();
+
+		}
+		
+		function populate(s1,s2){
+			var s1 = document.getElementById(s1);
+			var s2 = document.getElementById(s2);
+			s2.innerHTML = "";
+
+			if(s1.value == "DomLoc"){
+				var DomArray = ["Baguio|Baguio", "Bohol|Bohol", "Boracay|Boracay", "Cebu|Cebu", "Davao|Davao", "ElNido|El Nido, Palawan", "Laguna|Laguna", "LegBic|Legazpi & Bicol", "Tagaytay|Tagaytay"]
+				s2.disabled = false
+			} else if(s1.value == "USA"){
+				var DomArray = ["Guam|Guam", "NewYork|New York"]
+				s2.disabled = false
+			} else if(s1.value == "Asia"){
+				var DomArray = ["Bangkok|Bangkok, Thailand", "Seoul|Seoul, South Korea", "Tokyo|Tokyo, Japan"]
+				s2.disabled = false
+			} else if(s1.value == "Europe"){
+				var DomArray = ["France|France", "Iceland|Iceland", "Spain|Spain"]
+				s2.disabled = false
+			} else if(s1.value == "OME"){
+				var DomArray = ["Australia|Australia", "Dubai|Dubai"]
+				s2.disabled = false
+			} else if(s1.value == ""){
+				var DomArray = ["null|Not available"]
+				s2.disabled = true
+			}
+			for(var option in DomArray){
+				var pair = DomArray[option].split("|");
+				var newOption = document.createElement("option");
+				newOption.value = pair[0];
+				newOption.innerHTML = pair[1];
+				s2.options.add(newOption);
+			}
+		}
+		
+    </script>
+
+<script>
+
+    var popup = document.getElementById("popup");
+    
+    var btn = document.getElementById("submit");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      popup.style.display = "block";
+      document.getElementById("passengers").value = "0";
+      document.getElementById("date").value = "";
+      document.getElementById("name").value = "";
+      document.getElementById("contno").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("tratyp").value = "";
+      document.getElementById("loc").value = "";
+      document.getElementById("date2").value = "";
+    }
+    
+    span.onclick = function() {
+      popup.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == popup) {
+        popup.style.display = "none";
+      }
+    }
+    </script>
+
+</body>
+
+</html>
